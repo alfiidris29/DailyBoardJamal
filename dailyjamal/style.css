@@ -1,0 +1,260 @@
+:root {
+    --bg-color: #f8fafc;
+    --card-bg: #ffffff;
+    --text-color: #0f172a;
+    --primary-color: #23e3dd;
+    --primary-hover: #38cac8;
+    --border-color: #e2e8f0;
+    --subtext-color: #64748b;
+    --input-bg: #f1f5f9;
+}
+
+body.dark-mode {
+    --bg-color: #0f172a; 
+    --card-bg: #1e293b;
+    --text-color: #f8fafc;
+    --primary-color: #63f1e0;
+    --primary-hover: #46e5e5;
+    --border-color: #334155;
+    --subtext-color: #94a3b8;
+    --input-bg: #0f172a;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-style: italic;
+    background-color: var(--bg-color);
+    color: var(--text-color);
+    margin: 0;
+    padding: 30px 50px;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 1px dashed var(--border-color);
+    padding-bottom: 15px;
+    margin-bottom: 25px;
+}
+
+#app > h2 {
+    grid-column: 1 / -1;
+    margin: 0 0 10px 0;
+    font-size: 2rem;
+    font-weight: normal;
+    color: var(--text-color) !important;
+}
+
+main#app {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+    align-items: start;
+}
+
+#tugas-section {
+    grid-column: 1;
+    grid-row: 2 / span 3;
+}
+
+#catatan-section {
+    grid-column: 2;
+    grid-row: 2;
+}
+
+#cuaca-section {
+    grid-column: 2;
+    grid-row: 3;
+}
+
+section {
+    background-color: var(--card-bg);
+    border: 1px solid var(--border-color);
+    padding: 20px;
+    border-radius: 12px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.03);
+}
+
+section h3 {
+    margin-top: 0;
+    margin-bottom: 15px;
+    font-size: 1.1rem;
+    font-weight: normal;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+input[type="text"], textarea {
+    width: 100%;
+    background-color: var(--input-bg);
+    color: var(--text-color);
+    margin: 6px 0;
+    padding: 10px 12px;
+    border-radius: 8px;
+    border: 1px solid transparent;
+    font-family: inherit;
+    font-size: 0.9rem;
+}
+
+input[type="text"]:focus, textarea:focus {
+    outline: none;
+    border-color: var(--border-color);
+}
+
+textarea {
+    resize: vertical;
+    min-height: 80px;
+}
+
+button {
+    background-color: var(--primary-color);
+    color: white;
+    cursor: pointer;
+    border: none;
+    border-radius: 6px;
+    padding: 8px 16px;
+    font-family: inherit;
+    font-size: 0.9rem;
+    transition: background-color 0.2s, opacity 0.2s;
+}
+
+button:hover {
+    background-color: var(--primary-hover);
+    opacity: 1;
+}
+
+#filter-container {
+    display: flex;
+    gap: 6px;
+    margin: 12px 0;
+}
+
+#filter-container button {
+    background-color: transparent;
+    color: var(--subtext-color);
+    border: 1px solid var(--border-color);
+    padding: 4px 12px;
+    border-radius: 15px;
+    font-size: 0.8rem;
+}
+
+#filter-container button:hover {
+    background-color: var(--input-bg);
+}
+
+ul#daftar-tugas {
+    list-style-type: none;
+    padding: 0;
+    margin-top: 15px;
+}
+
+ul#daftar-tugas li {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 14px;
+    margin-bottom: 8px;
+    border: 1px solid var(--border-color);
+    border-radius: 8px;
+    background-color: var(--card-bg);
+    font-size: 0.95rem;
+}
+
+/* Pegangan Drag & Drop Styling Visual */
+ul#daftar-tugas li::before {
+    content: "░░";
+    color: var(--subtext-color);
+    font-size: 0.75rem;
+    margin-right: 8px;
+}
+
+ul#daftar-tugas li button {
+    background: transparent;
+    color: var(--subtext-color);
+    padding: 2px 6px;
+    font-size: 0.85rem;
+    border-radius: 4px;
+}
+
+ul#daftar-tugas li button:hover {
+    background-color: var(--input-bg);
+    color: var(--text-color);
+}
+
+li[draggable="true"] {
+    cursor: grab;
+}
+
+li.dragging {
+    opacity: 0.4;
+}
+
+.catatan-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(140px, 1fr));
+    gap: 10px;
+    margin-top: 12px;
+}
+
+.catatan-item {
+    background-color: var(--card-bg);
+    border: 1px dashed var(--border-color);
+    border-radius: 8px;
+    padding: 10px;
+    position: relative;
+}
+
+.catatan-item p {
+    margin: 0;
+    font-size: 0.85rem;
+}
+
+.catatan-item small {
+    display: block;
+    margin-top: 8px;
+    color: var(--subtext-color);
+    font-size: 0.7rem;
+}
+
+.catatan-item button {
+    position: absolute;
+    top: 4px;
+    right: 4px;
+    background: none;
+    color: var(--subtext-color);
+    padding: 0 4px;
+}
+
+blockquote#kutipan-harian {
+    margin: 15px 0;
+    padding-left: 10px;
+    border-left: 2px solid var(--primary-color);
+    font-style: italic;
+    color: var(--text-color);
+}
+
+footer {
+    text-align: center;
+    margin-top: 40px;
+    padding-top: 15px;
+    border-top: 1px solid var(--border-color); /* Perbaikan dari padding-top ke border-top */
+    font-size: 0.85rem;
+    color: var(--subtext-color);
+}
+
+@media (max-width: 768px) {
+    main#app {
+        grid-template-columns: 1fr;
+    }
+    #tugas-section, #catatan-section, #cuaca-section {
+        grid-column: 1;
+        grid-row: auto;
+    }
+}
