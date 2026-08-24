@@ -35,6 +35,7 @@ DailyBoard/
 ├── style.css       
 ├── README.md
 └── pisah/
+
     ├── script.js  
     ├── storage.js 
     ├── tugas.js 
