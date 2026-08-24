@@ -16,16 +16,16 @@
 
 ++ Panduan Penggunaan ++
 
- -Navigasi Tugas
- -Menambah Tugas: Masukkan rincian pekerjaan lalu simpan ke dalam daftar.
- -Tandai Selesai: Klik tombol status untuk mengubah progres tugas.
- -Memperbarui Tugas: Ubah rincian tugas yang sudah ada kapan saja.
- -Menghapus Tugas: Bersihkan daftar dari tugas yang sudah tidak diperlukan.
- -Pengelolaan Catatan
- -Menambah Catatan: Tuliskan gagasan atau poin penting baru.
- -Menghapus Catatan: Hapus item catatan yang sudah selesai dibaca/digunakan.
- -Mengubah Tema
- -Tekan tombol Modus Gelap / Terang untuk beralih kontras layar.
+ - Navigasi Tugas
+ - Menambah Tugas: Masukkan rincian pekerjaan lalu simpan ke dalam daftar.
+ - Tandai Selesai: Klik tombol status untuk mengubah progres tugas.
+ - Memperbarui Tugas: Ubah rincian tugas yang sudah ada kapan saja.
+ - Menghapus Tugas: Bersihkan daftar dari tugas yang sudah tidak diperlukan.
+ - Pengelolaan Catatan
+ - Menambah Catatan: Tuliskan gagasan atau poin penting baru.
+ - Menghapus Catatan: Hapus item catatan yang sudah selesai dibaca/digunakan.
+ - Mengubah Tema
+ - Tekan tombol Modus Gelap / Terang untuk beralih kontras layar.
 
 ++ Struktur Berkas ++
 
