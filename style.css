@@ -1,23 +1,23 @@
 :root {
-    --bg-color: #f8fafc;
-    --card-bg: #ffffff;
+    --bg-color: #c4e6c4;
+    --card-bg: #cad2c8;
     --text-color: #0f172a;
-    --primary-color: #23e3dd;
-    --primary-hover: #38cac8;
-    --border-color: #e2e8f0;
-    --subtext-color: #64748b;
-    --input-bg: #f1f5f9;
+    --primary-color: #085f2d;
+    --primary-hover: #1d6b42;
+    --border-color: #afc2a9;
+    --subtext-color: #62a167;
+    --input-bg: #a8aaa7;
 }
 
 body.dark-mode {
-    --bg-color: #0f172a; 
-    --card-bg: #1e293b;
+    --bg-color: #071709; 
+    --card-bg: #082f13;
     --text-color: #f8fafc;
-    --primary-color: #63f1e0;
-    --primary-hover: #46e5e5;
-    --border-color: #334155;
+    --primary-color: #085f2d;
+    --primary-hover: #1d6b42;
+    --border-color: #0c2e0e;
     --subtext-color: #94a3b8;
-    --input-bg: #0f172a;
+    --input-bg: #101611;
 }
 
 * {
@@ -25,8 +25,7 @@ body.dark-mode {
 }
 
 body {
-    font-family: Georgia, 'Times New Roman', Times, serif;
-    font-style: italic;
+    font-family: Arial, Helvetica, sans-serif;
     background-color: var(--bg-color);
     color: var(--text-color);
     margin: 0;
@@ -46,15 +45,14 @@ header {
 #app > h2 {
     grid-column: 1 / -1;
     margin: 0 0 10px 0;
-    font-size: 2rem;
-    font-weight: normal;
+    font-size: 3rem;
     color: var(--text-color) !important;
 }
 
 main#app {
     display: grid;
     grid-template-columns: 1fr 1fr;
-    gap: 20px;
+    gap: 10px;
     align-items: start;
 }
 
