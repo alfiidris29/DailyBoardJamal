@@ -1,15 +1,10 @@
 ++ Fitur Unggulan ++
 
  - Pengelolaan Tugas (To-Do List): Buat, perbarui, hapus, dan tandai progres penyelesaian pekerjaan.
- 
  - Jurnal & Catatan Harian: Dokumentasikan ide atau catatan penting lengkap dengan stempel waktu otomatis.
- 
  - Widget Cuaca Terintegrasi: Pantau perkiraan cuaca terkini secara real-time.
- 
- - Inspirasi Harian: Tampilan kutipan motivasi yang diperbarui setiap hari.
- 
+ - Inspirasi Harian: Tampilan kutipan motivasi yang diperbarui setiap hari. 
  - Mode Tampilan (Gelap / Terang): Sesuaikan tema antarmuka demi kenyamanan visual Anda.
- - 
  - Penyimpanan Lokal: Data tersimpan aman di peramban tanpa perlu basis data eksternal (LocalStorage).
 
 ++  Basis Teknologi ++
