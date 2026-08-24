@@ -30,14 +30,14 @@
 ++ Struktur Berkas ++
 
 Plaintext
-DailyBoard/
-├── index.html       
-├── style.css       
-├── README.md
-└── pisah/
 
-    ├── script.js  
-    ├── storage.js 
-    ├── tugas.js 
-    ├── catatan.js  
-    └── api.js
+    DailyBoard/
+        ├── index.html       
+        ├── style.css       
+        ├── README.md
+        └── pisah/
+            ├── script.js  
+            ├── storage.js 
+            ├── tugas.js 
+            ├── catatan.js  
+            └── api.js ```
